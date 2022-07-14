@@ -43,9 +43,6 @@ namespace Carrera
                     Task.Factory.StartNew(() => IncreaseValue( Automovil_3, 1),
                     CancellationToken.None,
                     TaskCreationOptions.LongRunning, _scheduler)
-
-
-
                 };
                 Task.WaitAll(tareas);
             }).Start();
